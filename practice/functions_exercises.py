@@ -17,18 +17,6 @@ def find_smallest():
     print(f"The smallest number in the list is {smallest_num}.")
 
 
-def future_investment():
-    deposit = eval(input("How much is your deposit now?"))
-
-    interest_rate = eval(input("Put the interest rate in percent:"))
-    n = eval(input("How many years will you wait?"))
-
-    for i in range(n):
-        deposit = deposit+(deposit*(interest_rate/100))
-        print(deposit)
-    print("Total_Deposit =", deposit)
-
-
 def duplication_remove():
     lists = [6, 4, 7, 6, 5, 5, 4, 4, 4, 5, 6, 4, 5]
     new_lists = []
@@ -70,12 +58,13 @@ def printer():
     c = 1.2354658
 
     print(f"{a} is less than {b}")
+    print("The value of c is %.2f." % c)
 
     print("{1} is greater than {0}".format(a, b))
 
     print("Hello {name}, Welcome to {an} {num}.".format(name="ZiDunn", an="Golden Land", num=37))
 
-    print("The value of c is %.2f." % c)
+    
 
 
 triangle_pattern()

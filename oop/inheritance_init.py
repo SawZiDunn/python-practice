@@ -7,7 +7,7 @@ class Ninja:
 
 class Student(Ninja):
     def __init__(self, name, clan):
-        super().__init__(name)
+        super().__init__(name) # assigning to the constructor in parent class Ninja
         self.clan = clan
 
 

@@ -13,6 +13,6 @@ with open("name.csv") as file:
 
 
 for student in sorted(students, key=lambda member: member["name"]):
-    # member's a student dictionary,also the name of
+    # member's each student dictionary,also the name of
     # the parameter passed to the lambda function
     print(student["name"], student["clan"])

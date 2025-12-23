@@ -2,7 +2,7 @@ class A:
    def __init__(self, c):
        print("---------Inside class A----------")
        self.c = c
-   print("Print inside A.")
+   print("Print inside A.") # this line will be printed as soon as the class is called even before __init__()
 
    def alpha(self):
        c = self.c + 1

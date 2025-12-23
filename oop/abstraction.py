@@ -6,28 +6,29 @@ class Bank(ABC):
         print("This is a generic bank")
         return "Generic bank: 0"
     
+    # any class that inherits from Bank Class must implement withdraw() method
     @abstractmethod
     def withdraw(self):
         pass
 
-# Class Swiss
 class Swiss(Bank):
 
     def __init__(self) -> None:
-        self.bal = 1000
+        self.__bal = 1000
         
     def basicinfo(self):
+        super().basicinfo()
         print("This is the Swiss Bank")
-        return f"Swiss Bank: {self.bal}"
+        return f"Swiss Bank: {self.__bal}"
     
     def withdraw(self, amount):
-        if amount > self.bal:
+        if amount > self.__bal:
             print("Insufficient funds")
         else:
-            self.bal -= amount
+            self.__bal -= amount
             print(f"Withdrawn amount: {amount}")
-            print(f"New Balance: {self.bal}")
-        return self.bal
+            print(f"New Balance: {self.__bal}")
+        return self.__bal
 
 # Driver Code
 def main():

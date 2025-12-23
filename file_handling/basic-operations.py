@@ -1,18 +1,3 @@
-def read_file(file_name):
-
-    with open(file_name) as f:
-        content = f.read()
-        print(content)
-        return content
-    
-
-def read_file_into_list(file_name):
-  
-    with open(file_name) as f:
-        content = f.readlines()
-        return content
-
-
 def write_first_line_to_file(file_contents, output_filename):
     
     first_line = file_contents.split("\n")[0]

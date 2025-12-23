@@ -8,7 +8,8 @@ def write0():
 
     with open("name.csv", "a") as file:
         file.write(name + "\n")
-        # file.close()  # not necessary if we use 'with'
+        
+    # file.close()  # not necessary if we use 'with'
 
 
 def write1():

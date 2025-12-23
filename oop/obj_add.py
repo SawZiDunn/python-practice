@@ -15,13 +15,13 @@ class Vault:
 
 
 def main():
-    potter = Vault(100, 50, 25)
-    print(potter)
+    potter: Vault = Vault(100, 50, 25)
+    print(potter) # result of __str__()
 
-    weasley = Vault(25, 50, 100)
+    weasley: Vault = Vault(25, 50, 100)
     print(weasley)
 
-    total = potter + weasley
+    total: Vault = potter + weasley
     print(total)
 
 

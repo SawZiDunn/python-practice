@@ -1,16 +1,17 @@
 class Account:
     def __init__(self):
-        self._balance = 0
+        self.__balance = 0
 
+    # everytime we call obj.balance, this method will work
     @property
     def balance(self):
-        return self._balance
+        return self.__balance
 
     def deposit(self, n):
-        self._balance += n
+        self.__balance += n
 
     def withdraw(self, n):
-        self._balance -= n
+        self.__balance -= n
 
 
 def main():
@@ -21,6 +22,10 @@ def main():
     print("Balance:", account.balance)
     account.withdraw(80)
     print("Balance:", account.balance)
+
+    print("Balance:", account.__balance)
+
+
 
 
 if __name__ == '__main__':

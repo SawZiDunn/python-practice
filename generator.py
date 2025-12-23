@@ -8,4 +8,6 @@ def sheep(n):
     for i in range(n):
         yield "Sheep" * i  # this returns every time
 
+main()
+
 

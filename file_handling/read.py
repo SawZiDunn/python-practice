@@ -4,7 +4,7 @@ def read0():
     # #  readlines() read all the lines in a file and keep them in a list
     #
     # for line in lines:
-    #     print(line.rstrip())  # rstrip() is same with strip() except being right only
+    #     print(line.rstrip())  # rstrip() is same with strip() except for being right only
 
     with open("name.csv") as file:  # read method can be omitted
         for line in sorted(file, reverse=True):  # file can be sorted
@@ -37,7 +37,7 @@ def read2():
     while line != "":  # or while line: # while there's a line
         count = count + 1
         total = total + eval(line.strip())  # strip() is not necessary
-        line = file.readline()
+        line = file.readline() # read the next line
     print("The average is", total / count)
 
 
