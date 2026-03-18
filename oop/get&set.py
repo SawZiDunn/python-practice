@@ -19,6 +19,6 @@ class Person:
   
 mark = Person() # will throw err
   
-mark.age = 18 # will also throw err
+mark.age = 18 # setter method will be called
   
-print(mark.age)
+print(mark.age) # getter method will be called

@@ -8,6 +8,7 @@ class Animal(ABC):
 
 	@age.setter
 	@abstractmethod
+
 	def age(self, value):
 		pass
 

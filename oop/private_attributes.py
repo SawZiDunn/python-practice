@@ -25,13 +25,14 @@ def main():
     clock.set_time(12, 9, 2)
 
     '''
-    If we use double underscore and try to access it using clock.__hour, we can also print clock.__hour later.
+    If we use double underscore and try to access it using clock.__hour, 
+    we can also print clock.__hour later.
     But, if we don't change the value using clock.__hour and try to print clock__hour directly, it will throw error.
     That's how private attribute works in python OOP.
     It works only for double underscore.
     '''
-    # clock.__hour = 8
-    # print(clock.__hour)
+    clock.__hour = 8
+    print(clock.__hour)
     clock.tick()
 
     print(clock.get_time())

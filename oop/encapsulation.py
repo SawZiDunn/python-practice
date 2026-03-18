@@ -22,8 +22,12 @@ def main():
     print("Balance:", account.balance)
     account.withdraw(80)
     print("Balance:", account.balance)
+    
+    account.balance = 500  # This will raise an error since balance has no setter
 
-    print("Balance:", account.__balance)
+
+
+    # print("Balance:", account.__balance) # This will raise an error since __balance is private
 
 
 
